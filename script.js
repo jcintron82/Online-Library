@@ -2,7 +2,7 @@ const div1 = document.getElementById('div1');
 const newDiv = document.createElement('div')
 let newBookBtn = document.getElementById('newBookBtn');
 let myLibrary =[];
-const clearBtn = document.createElement('button');
+const clear1 = document.getElementById('clear1');
 const trashBar = document.getElementById('trashBar')
 
 const book1 = new book('hobbit, ','jk rowling, ', '420 pages, ', 'not read');
@@ -20,6 +20,18 @@ submitBtn.addEventListener("click", function() {
     addBookToLibrary(book1);
 })
 
+clear1.addEventListener('click', function () {
+    div1.textContent = ''
+})
+
+status1.addEventListener('click', function() {
+    if (status1.className === 'readBtns') {
+        status1.className = 'statusRead'
+    }
+    else if (status1.className === 'statusRead') {
+        status1.className = 'readBtns'
+    }
+})
 
 
 function book(title, author, pages, status) {
@@ -40,17 +52,9 @@ function addBookToLibrary(book){
             + book.pages + book.status);
     }}
 
-function newTrashDiv() { 
-    for (let i = 0; i < 10; i++){
-        const newDiv = document.createElement('div')
-        const trashBar = document.getElementById('trashBar')
-        trashBar.appendChild(newDiv)
-        newDiv.className = 'trashBarDivs';
-    }}
-
 
 addBookToLibrary(book1);
-newTrashDiv();
+
 
 
 
