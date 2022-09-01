@@ -1,10 +1,67 @@
-.container {
-	height: 50vh;
-	width: 50vh;
+html {
+	background-color: lightcoral;
+}
+
+body {display: flex;
+	padding: 0; margin: 0;
+}
+
+.leftSide {
 	display: inline-flex;
+	height: 100vh;
+	width: 50vh;
+	background-color: lightgoldenrodyellow;
+
+}
+
+.newBookBtn {
+	height: 10vh;
+	width: 25vh;
+}
+
+.contentContainer {
+	height: 100vh;
+	width: 100vh;
+	display: inline-flex;
+	flex-direction: column;
+	background-color: lightcoral ;
+	
+}
+
+.trashBar {
+	display: inline-flex;
+	flex-direction: column;
+	width: 5vh;
+	background-color: lightslategray;
+}
+
+.trashBarDivs {
+	display: inline-flex;
+	gap: 20px;
+	border-style: solid;
+	border-color: lightslategray lightslategray black lightslategray;
+	height: 9.3vh;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.bookDivs {
+	display: flex;
 	border-style: solid;
 	border-color: black;
-	background-color: lightblue;
+	height: 10vh;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.rightSide {
+	display: inline-flex;
+	height: 100vh;
+	width: 50vh;
+	background-color: lightsteelblue;
 }
 
 .formHide {
@@ -36,9 +93,9 @@
 input {
 	border-style: solid;
 	border-width: .3vh;
-	border-color: #96ACB7 #96ACB7 black black;
+	border-color: #96ACB7 #96ACB7 #697477 #697477;
 	border-bottom-left-radius: 3vh;
-	background-color: #A9B5BB;
+	background-color: #C2C7C9;
 	margin: 3vh;
 	
 
@@ -46,9 +103,25 @@ input {
 
 
 input:hover {
-	background-color: #A9B5BB;
+	background-color: #BCC5C8;
 }
 
 label {
 	text-align: center;
+}
+
+.submitBtn {
+	width: 25vh;
+	height: 5vh;
+	border-radius: 2vh;
+	text-align: center;
+	margin-left: 3vh;
+}
+
+.radioBtnHdr {
+	text-align: center;
+}
+
+.radioBtnsContainer {
+	padding-left: 2.5vh;
 }

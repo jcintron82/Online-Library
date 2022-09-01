@@ -9,7 +9,7 @@
   </head>
 
 
-   <form id="form" class="formShow">
+   <form id="form" class="formHide">
         <label for="title"> </label>
             <input type="text" class="newBookInputs" placeholder="Title" > </input>
 
@@ -21,22 +21,39 @@
         <label for="pages"> </label>
             <input type="number" class="newBookInputs" placeholder="Pages" > </input> 
 
-    
+                 <div class="radioBtnHdr"> Have you finished this book? </div>
+    <div class="radioBtnsContainer">
         <label for="status"> Read </label>
             <input type="radio"> </input>
 
             <label> Not read </label>
           <input type="radio"> </input>
-        
+          </div>
 
-            <button id="submitBtn" type="button"> New </button> 
+            <button id="submitBtn" type="button" class="submitBtn"> New </button> 
       </form>
-      <button id="newBookBtn" type="button"> New </button> 
+      <div class="leftSide">
+      <button id="newBookBtn" type="button" class="newBookBtn"> New </button> 
+    </div>
   <body>
      
-    <div class="container">
+    <div class="contentContainer">
      
-	   <div id="div1"></div>
+	   <div id="div1" class="bookDivs"></div>
+     <div id="div2" class="bookDivs"></div>
+     <div id="div3" class="bookDivs"></div>
+     <div id="div4" class="bookDivs"></div>
+     <div id="div5" class="bookDivs"></div>
+     <div id="div6" class="bookDivs"></div>
+     <div id="div7" class="bookDivs"></div>
+     <div id="div8" class="bookDivs"></div>
+     <div id="div9" class="bookDivs"></div>
+     <div id="div10"class="bookDivs"></div>
+
+
+     </div>
+<div id="trashBar" class="trashBar"></div>
+     <div class="rightSide">
      </div>
   </body>
   <script src="script.js"></script>
