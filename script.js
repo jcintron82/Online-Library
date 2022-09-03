@@ -3,26 +3,42 @@ const newDiv = document.createElement('div')
 const form = document.getElementById('form')
 let newBookBtn = document.getElementById('newBookBtn');
 let myLibrary =[];
+let text = myLibrary.join()
 const clear1 = document.getElementById('clear1');
 const trashBar = document.getElementById('trashBar')
-const boxes = document.querySelectorAll('.readBtns');
+const newBook = new book(title,author,pages,status)
 
-const book1 = new book('Title: hobbit, ','jk rowling, ', '420 pages, ', 'not read');
-book1.reportInfo()
 
-const book2 = new book('h, ','j, ', '42es, ', 'ad');
-book1.reportInfo()
 
-form.addEventListener('submit', addBookToLibrary(book2));
+
+
+
+
+
 
 newBookBtn.addEventListener("click", function() {
     document.getElementById('form').className = "formShow"
 })
 
-submitBtn.addEventListener("click", function() {
+submitBtn.addEventListener("click", function(e){
+    myLibrary.push('hi')
+    const title = document.getElementById('title').value;
+    const author = document.getElementById('author').value;
+    const pages = document.getElementById('pages').value;
+    const status = document.getElementById('status').value;
     document.getElementById('form').className = "formHide";
-    addBookToLibrary(book1);
-})
+    e.preventDefault();
+    if (div1.textContent === '') { //can probably do all this easier with a for loop
+             div1.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+
+    }
+    else if (div1.textContent != '') {
+        div2.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+    }
+
+
+
+      })
 
 clear1.addEventListener('click', function () {
     div1.textContent = ''
@@ -130,13 +146,8 @@ function book(title, author, pages, status) {
     }
 }
 
+    
 
-function addBookToLibrary(book){
-    myLibrary.push(book);
-        for (let i = 0; i < 1; i++){
-           div1.textContent = (book.title + book.author 
-            + book.pages + book.status);
-    }}
 
 
 
