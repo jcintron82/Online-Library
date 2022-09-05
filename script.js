@@ -1,4 +1,3 @@
-const div1 = document.getElementById('div1');
 const newDiv = document.createElement('div')
 const form = document.getElementById('form')
 let newBookBtn = document.getElementById('newBookBtn');
@@ -21,27 +20,81 @@ newBookBtn.addEventListener("click", function() {
 })
 
 submitBtn.addEventListener("click", function(e){
-    myLibrary.push('hi')
+   
     const title = document.getElementById('title').value;
     const author = document.getElementById('author').value;
     const pages = document.getElementById('pages').value;
-    const status = document.getElementById('status').value;
     document.getElementById('form').className = "formHide";
     e.preventDefault();
-    if (div1.textContent === '') { //can probably do all this easier with a for loop
+    myLibrary.push(title, author, pages, status)
+    const text = document.createTextNode('d')
+   
+     if (div1.textContent === '') { //can probably do all this easier with a for loop
              div1.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
 
     }
-    else if (div1.textContent != '') {
+     else if (div2.textContent === '') {
         div2.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
     }
+     else if (div3.textContent === '') {
+        div3.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+    }
+     else if (div4.textContent === '') {
+        div4.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+    }
+     else if (div5.textContent === '') {
+        div5.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+    }
+     else if (div6.textContent === '') { //can probably do all this easier with a for loop
+             div6.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
 
+    }
+     else if (div7.textContent === '') {
+        div7.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+    }
+     else if (div8.textContent === '') {
+        div8.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+    }
+     else if (div9.textContent === '') {
+        div9.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+    }
+     else if (div10.textContent === '') {
+        div10.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+    }
+    document.getElementById('title').value = "";
+})
 
-
-      })
+console.log(myLibrary)
 
 clear1.addEventListener('click', function () {
     div1.textContent = ''
+})
+clear2.addEventListener('click', function () {
+    div2.textContent = ''
+})
+clear3.addEventListener('click', function () {
+    div3.textContent = ''
+})
+clear4.addEventListener('click', function () {
+    div4.textContent = ''
+})
+clear5.addEventListener('click', function () {
+    div5.textContent = ''
+})
+clear6.addEventListener('click', function () {
+    div6.textContent = ''
+})
+clear7.addEventListener('click', function () {
+    div7.textContent = ''
+})
+clear8.addEventListener('click', function () {
+    div8.textContent = ''
+})
+clear9.addEventListener('click', function () {
+    div9.textContent = ''
+})
+clear10.addEventListener('click', function () {
+    div10.textContent = ''
 })
 
 status1.addEventListener('click', function() {
@@ -145,10 +198,6 @@ function book(title, author, pages, status) {
        console.log(title, author, pages, status)
     }
 }
-
-    
-
-
 
 
 
