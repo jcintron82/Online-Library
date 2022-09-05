@@ -6,31 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML 5 Boilerplate</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   </head>
 
 
-   <form id="form" class="formHide" method="post">
+   <form id="form" class="formHide">
         <label for="title"> </label>
-            <input type="text" class="newBookInputs" placeholder="Title" > </input>
+            <input type="text" class="newBookInputs" placeholder="Title" id="title" > </input>
 
     
         <label for="author"> </label>
-            <input type="text" class="newBookInputs" placeholder="Author" > </input>
+            <input type="text" class="newBookInputs" placeholder="Author" id="author"> </input>
 
   
         <label for="pages"> </label>
-            <input type="number" class="newBookInputs" placeholder="Pages" > </input> 
+            <input type="number" class="newBookInputs" placeholder="Pages" id="pages"> </input> 
 
-                 <div class="radioBtnHdr"> Have you finished this book? </div>
-    <div class="radioBtnsContainer">
-        <label for="status"> Read </label>
-            <input type="radio"> </input>
+                 
 
-            <label> Not read </label>
-          <input type="radio"> </input>
-          </div>
-
-            <button id="submitBtn" type="submit" class="submitBtn"> New </button> 
+            <button id="submitBtn" type="button" class="submitBtn"> New </button> 
       </form>
       <div class="leftSide">
         <div class="btnoverline1"><div class="btnoverline2"></div></div>
@@ -39,7 +35,7 @@
     </div>
   <body>
      
-    <div class="contentContainer">
+    <div class="contentContainer" id="contentContainer">
      
 	   <div class="bookDivs"><button type="button" class="readBtns" id="status1"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
@@ -47,39 +43,39 @@
 
      <div class="bookDivs"><button type="button" class="readBtns" id="status2"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg></button><div id="div2" class="bookNames">&nbsp;</div></div>
+</svg></button><div id="div2" class="bookNames"></div></div>
 
      <div class="bookDivs"><button type="button" class="readBtns" id="status3"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg></button><div id="div3" class="bookNames">&nbsp;</div></div>
+</svg></button><div id="div3" class="bookNames"></div></div>
 
      <div class="bookDivs"><button type="button" class="readBtns" id="status4"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg></button><div id="div4" class="bookNames">&nbsp;</div></div>
+</svg></button><div id="div4" class="bookNames"></div></div>
 
      <div class="bookDivs"><button type="button" class="readBtns" id="status5"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg></button><div id="div5" class="bookNames">&nbsp;</div></div>
+</svg></button><div id="div5" class="bookNames"></div></div>
 
      <div class="bookDivs"><button type="button" class="readBtns" id="status6"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg></button><div id="div6" class="bookNames">&nbsp;</div></div>
+</svg></button><div id="div6" class="bookNames"></div></div>
 
      <div class="bookDivs"><button type="button" class="readBtns" id="status7"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg></button><div id="div7" class="bookNames">&nbsp;</div></div>
+</svg></button><div id="div7" class="bookNames"></div></div>
 
      <div class="bookDivs"><button type="button" class="readBtns" id="status8"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg></button><div id="div8" class="bookNames">&nbsp;</div></div>
+</svg></button><div id="div8" class="bookNames"></div></div>
 
      <div class="bookDivs"><button type="button" class="readBtns" id="status9"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg></button><div id="div9" class="bookNames">&nbsp;</div></div>
+</svg></button><div id="div9" class="bookNames"></div></div>
 
      <div class="bookDivs"><button type="button" class="readBtns" id="status10"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg></button><div id="div10" class="bookNames">&nbsp;</div></div>
+</svg></button><div id="div10" class="bookNames"></div></div>
 
 
      </div>
@@ -141,5 +137,6 @@
      <div class="rightSide">
      </div>
   </body>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="script.js"></script>
 </html>
