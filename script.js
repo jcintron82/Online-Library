@@ -1,18 +1,18 @@
-const newDiv = document.createElement('div')
 const form = document.getElementById('form')
 let newBookBtn = document.getElementById('newBookBtn');
-let myLibrary =[];
-let text = myLibrary.join()
 const clear1 = document.getElementById('clear1');
 const trashBar = document.getElementById('trashBar')
 const newBook = new book(title,author,pages,status)
 
-
-
-
-
-
-
+function book(title, author, pages, status) {
+    this.title = title
+    this.author = author
+    this.pages = pages
+    this.status = status
+    this.reportInfo = function() {
+       console.log(title, author, pages, status)
+    }
+}
 
 
 newBookBtn.addEventListener("click", function() {
@@ -20,17 +20,14 @@ newBookBtn.addEventListener("click", function() {
 })
 
 submitBtn.addEventListener("click", function(e){
-   
     const title = document.getElementById('title').value;
     const author = document.getElementById('author').value;
     const pages = document.getElementById('pages').value;
     document.getElementById('form').className = "formHide";
     e.preventDefault();
-    myLibrary.push(title, author, pages, status)
-    const text = document.createTextNode('d')
    
      if (div1.textContent === '') { //can probably do all this easier with a for loop
-             div1.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+             div1.textContent = 'Title: '+ title +" " + 'Author: ' + author + ' Pages:' + pages
 
     }
      else if (div2.textContent === '') {
@@ -61,7 +58,7 @@ submitBtn.addEventListener("click", function(e){
      else if (div10.textContent === '') {
         div10.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
     }
-    document.getElementById('title').value = "";
+    form.reset();
 })
 
 console.log(myLibrary)
@@ -188,16 +185,6 @@ status10.addEventListener('click', function() {
 })
 
 
-
-function book(title, author, pages, status) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.status = status
-    this.reportInfo = function() {
-       console.log(title, author, pages, status)
-    }
-}
 
 
 
