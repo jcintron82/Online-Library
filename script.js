@@ -1,31 +1,96 @@
-const div1 = document.getElementById('div1');
-const newDiv = document.createElement('div')
 const form = document.getElementById('form')
 let newBookBtn = document.getElementById('newBookBtn');
-let myLibrary =[];
 const clear1 = document.getElementById('clear1');
 const trashBar = document.getElementById('trashBar')
-const boxes = document.querySelectorAll('.readBtns');
+const newBook = new book(title,author,pages,status)
 
-const book1 = new book('Title: hobbit, ','jk rowling, ', '420 pages, ', 'not read');
-book1.reportInfo()
+function book(title, author, pages, status) {
+    this.title = title
+    this.author = author
+    this.pages = pages
+    this.status = status
+    this.reportInfo = function() {
+       console.log(title, author, pages, status)
+    }
+}
 
-const book2 = new book('h, ','j, ', '42es, ', 'ad');
-book1.reportInfo()
-
-form.addEventListener('submit', addBookToLibrary(book2));
 
 newBookBtn.addEventListener("click", function() {
     document.getElementById('form').className = "formShow"
 })
 
-submitBtn.addEventListener("click", function() {
+submitBtn.addEventListener("click", function(e){
+    const title = document.getElementById('title').value;
+    const author = document.getElementById('author').value;
+    const pages = document.getElementById('pages').value;
     document.getElementById('form').className = "formHide";
-    addBookToLibrary(book1);
+    e.preventDefault();
+   
+     if (div1.textContent === '') { //can probably do all this easier with a for loop
+             div1.textContent = 'Title: '+ title +" " + 'Author: ' + author + ' Pages:' + pages
+
+    }
+     else if (div2.textContent === '') {
+        div2.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+    }
+     else if (div3.textContent === '') {
+        div3.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+    }
+     else if (div4.textContent === '') {
+        div4.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+    }
+     else if (div5.textContent === '') {
+        div5.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+    }
+     else if (div6.textContent === '') { //can probably do all this easier with a for loop
+             div6.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+
+    }
+     else if (div7.textContent === '') {
+        div7.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+    }
+     else if (div8.textContent === '') {
+        div8.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+    }
+     else if (div9.textContent === '') {
+        div9.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+    }
+     else if (div10.textContent === '') {
+        div10.textContent = 'Title: '+ title + ' Author: ' + author + ' Pages:' + pages
+    }
+    form.reset();
 })
+
 
 clear1.addEventListener('click', function () {
     div1.textContent = ''
+})
+clear2.addEventListener('click', function () {
+    div2.textContent = ''
+})
+clear3.addEventListener('click', function () {
+    div3.textContent = ''
+})
+clear4.addEventListener('click', function () {
+    div4.textContent = ''
+})
+clear5.addEventListener('click', function () {
+    div5.textContent = ''
+})
+clear6.addEventListener('click', function () {
+    div6.textContent = ''
+})
+clear7.addEventListener('click', function () {
+    div7.textContent = ''
+})
+clear8.addEventListener('click', function () {
+    div8.textContent = ''
+})
+clear9.addEventListener('click', function () {
+    div9.textContent = ''
+})
+clear10.addEventListener('click', function () {
+    div10.textContent = ''
 })
 
 status1.addEventListener('click', function() {
@@ -117,31 +182,3 @@ status10.addEventListener('click', function() {
         status10.className = 'readBtns'
     }
 })
-
-
-
-function book(title, author, pages, status) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.status = status
-    this.reportInfo = function() {
-       console.log(title, author, pages, status)
-    }
-}
-
-
-function addBookToLibrary(book){
-    myLibrary.push(book);
-        for (let i = 0; i < 1; i++){
-           div1.textContent = (book.title + book.author 
-            + book.pages + book.status);
-    }}
-
-
-
-
-
-
-
-
