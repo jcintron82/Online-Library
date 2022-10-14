@@ -74,7 +74,11 @@ body {display: flex;
 	margin-bottom: 1vh;
 	margin-left: 1vh;
 	border-top-left-radius: 5vh;
+<<<<<<< HEAD
 	border-color: #69385C #F9F6F1 #F9F6F1 #69385C;	
+=======
+	border-color: #69385C #FFF5EB #FFF5EB #69385C;	
+>>>>>>> d39be0568e0ab59db6a0142b944f4d9f7c95fa78
 }
 
 .btnunderline2 {

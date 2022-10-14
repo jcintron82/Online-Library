@@ -61,6 +61,10 @@ submitBtn.addEventListener("click", function(e){
     form.reset();
 })
 
+<<<<<<< HEAD
+=======
+console.log(myLibrary)
+>>>>>>> d39be0568e0ab59db6a0142b944f4d9f7c95fa78
 
 clear1.addEventListener('click', function () {
     div1.textContent = ''
@@ -182,3 +186,15 @@ status10.addEventListener('click', function() {
         status10.className = 'readBtns'
     }
 })
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+>>>>>>> d39be0568e0ab59db6a0142b944f4d9f7c95fa78
