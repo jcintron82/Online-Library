@@ -4,82 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
+    <title>Virtual Library</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   </head>
 
 
-   <form id="form" class="formHide" method="post">
+   <form id="form" class="formHide">
         <label for="title"> </label>
-            <input type="text" class="newBookInputs" placeholder="Title" > </input>
+            <input type="text" class="newBookInputs" placeholder="Title" id="title" > </input>
 
     
         <label for="author"> </label>
-            <input type="text" class="newBookInputs" placeholder="Author" > </input>
+            <input type="text" class="newBookInputs" placeholder="Author" id="author"> </input>
 
   
         <label for="pages"> </label>
-            <input type="number" class="newBookInputs" placeholder="Pages" > </input> 
+            <input type="number" class="newBookInputs" placeholder="Pages" id="pages"> </input> 
 
-                 <div class="radioBtnHdr"> Have you finished this book? </div>
-    <div class="radioBtnsContainer">
-        <label for="status"> Read </label>
-            <input type="radio"> </input>
+                 
 
-            <label> Not read </label>
-          <input type="radio"> </input>
-          </div>
-
-            <button id="submitBtn" type="submit" class="submitBtn"> New </button> 
+            <button id="submitBtn" type="button" class="submitBtn"> New </button> 
       </form>
+
       <div class="leftSide">
         <div class="btnoverline1"><div class="btnoverline2"></div></div>
       <button id="newBookBtn" type="button" class="newBookBtn"> New </button> 
       <div class="btnunderline1"><div class="btnunderline2"></div></div>
     </div>
+
   <body>
-     
-    <div class="contentContainer">
-     
-	   <div class="bookDivs"><button type="button" class="readBtns" id="status1"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <div class="contentContainer" id="contentContainer">
+       <div class="bookDivs"><button type="button" class="readBtns" id="status1"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
 </svg></button><div id="div1" class="bookNames"></div></div>
 
+
      <div class="bookDivs"><button type="button" class="readBtns" id="status2"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg></button><div id="div2" class="bookNames">&nbsp;</div></div>
+</svg></button><div id="div2" class="bookNames"></div></div>
+
 
      <div class="bookDivs"><button type="button" class="readBtns" id="status3"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg></button><div id="div3" class="bookNames">&nbsp;</div></div>
+</svg></button><div id="div3" class="bookNames"></div></div>
+
 
      <div class="bookDivs"><button type="button" class="readBtns" id="status4"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg></button><div id="div4" class="bookNames">&nbsp;</div></div>
+</svg></button><div id="div4" class="bookNames"></div></div>
+
 
      <div class="bookDivs"><button type="button" class="readBtns" id="status5"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg></button><div id="div5" class="bookNames">&nbsp;</div></div>
+</svg></button><div id="div5" class="bookNames"></div></div>
+
 
      <div class="bookDivs"><button type="button" class="readBtns" id="status6"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg></button><div id="div6" class="bookNames">&nbsp;</div></div>
+</svg></button><div id="div6" class="bookNames"></div></div>
+
 
      <div class="bookDivs"><button type="button" class="readBtns" id="status7"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg></button><div id="div7" class="bookNames">&nbsp;</div></div>
+</svg></button><div id="div7" class="bookNames"></div></div>
+
 
      <div class="bookDivs"><button type="button" class="readBtns" id="status8"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg></button><div id="div8" class="bookNames">&nbsp;</div></div>
+</svg></button><div id="div8" class="bookNames"></div></div>
+
 
      <div class="bookDivs"><button type="button" class="readBtns" id="status9"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg></button><div id="div9" class="bookNames">&nbsp;</div></div>
+</svg></button><div id="div9" class="bookNames"></div></div>
+
 
      <div class="bookDivs"><button type="button" class="readBtns" id="status10"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg></button><div id="div10" class="bookNames">&nbsp;</div></div>
+</svg></button><div id="div10" class="bookNames"></div></div>
 
 
      </div>
@@ -134,9 +139,6 @@
         <path fill="currentColor" d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z" />
         </svg> </button></div>
      </div>
-
-
-
 
      <div class="rightSide">
      </div>
